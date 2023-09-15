@@ -1,5 +1,7 @@
+// Se importa la clase People
 import { People } from "../people/people";
 
+// Se define la clase Starship que representa los datos de las naves
 export class Starship {
 
     name:string;
@@ -15,12 +17,13 @@ export class Starship {
     hyperdrive_rating:number;
     MGLT:number;
     starship_class:string;
-    pilots:[];
+    pilots:People[];
     films:[];
     created:string;
     edited:string;
     url:string;
 
+    // Constructor de la clase
     constructor(
 
         name:string,
@@ -36,13 +39,15 @@ export class Starship {
         hyperdrive_rating:number,
         MGLT:number,
         starship_class:string,
-        pilots:[],
+        pilots:People[],
         films:[],
         created:string,
         edited:string,
         url:string
 
-    ){
+    )
+    // Se asignan los valores como parámetros a las propiedades correspondientes
+    {
         this.name=name;
         this.model=model;
         this.manufacturer=manufacturer;

@@ -4,3 +4,8 @@ body {
     background-color: #2f2f2f;
   }
 
+#div{
+    width: 300px; /* Cambia el ancho a 300 píxeles */
+    height: 50px; /* Cambia la altura a 200 píxeles */
+    background-color: transparent; /* Puedes cambiar el color de fondo si lo deseas */
+}
