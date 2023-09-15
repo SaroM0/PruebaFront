@@ -5,7 +5,7 @@
 <div class="container-fluid">
   <div class="row">
     <div class="col mb-4" *ngFor="let starship of starships">
-          <div class="card p-2" style="width: 15rem; height: 18rem; background-color: #151414; color:rgb(255, 255, 255)">
+          <div class="card p-2" style="width: 15rem; height: 22rem; background-color: #151414; color:rgb(255, 255, 255)">
             <img
                 class="card-img-top"
                 src="https://images.saymedia-content.com/.image/t_share/MTc1MTEzMzMzMTE5Mzk0OTEx/top-6-iconic-spaceships-in-star-wars.jpg"
@@ -13,7 +13,9 @@
               />
               <div class="card-body">
                 <h5 class="card-title">{{ starship.name }}</h5>
-                  <p class="card-text"> modelo: [{{ starship.model }}]</p>
+                  <p class="card-text"> Modelo: {{ starship.model }}</p>
+                  <p class="card-text"> Velocidad: {{ starship.max_atmosphering_speed }} MKM</p>
+                  <p class="card-text"> Costo: {{ starship.cost_in_credits }} creditos</p>
               </div>
            </div>
       </div>

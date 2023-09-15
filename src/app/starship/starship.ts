@@ -1,9 +1,11 @@
+import { People } from "../people/people";
+
 export class Starship {
 
     name:string;
     model:string;
     manufacturer:string;
-    cost_in_credits:string;
+    cost_in_credits:number;
     lenght:number;
     max_atmosphering_speed:number;
     crew:string;
@@ -24,7 +26,7 @@ export class Starship {
         name:string,
         model:string,
         manufacturer:string,
-        cost_in_credits:string,
+        cost_in_credits:number,
         lenght:number,
         max_atmosphering_speed:number,
         crew:string,

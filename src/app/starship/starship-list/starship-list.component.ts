@@ -27,8 +27,8 @@ export class StarshipListComponent implements OnInit {
       this.starships = data.results.map((result: any) => ({
         name: result.name,
         model: result.model,
-        
-        // Mapea otros campos según tu clase Starship
+        max_atmosphering_speed:result.max_atmosphering_speed,
+        cost_in_credits:result.cost_in_credits,
       }));
     });
   }
@@ -39,6 +39,8 @@ export class StarshipListComponent implements OnInit {
       this.starships = data.results.map((result: any) => ({
         name: result.name,
         model: result.model,
+        max_atmosphering_speed:result.max_atmosphering_speed,
+        cost_in_credits:result.cost_in_credits,
         
         // Mapea otros campos según tu clase Starship
       }));
