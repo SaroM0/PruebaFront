@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class StarshipService {
 
-  private apiUrl: string = environment.baseUrl;
+  private apiUrl: string = environment.baseUrl + "starships";
 
 constructor(private http: HttpClient) { }
 
@@ -17,9 +17,8 @@ constructor(private http: HttpClient) { }
     return this.http.get<Starship[]>(this.apiUrl);
   }
 
-  getNextStarships(url: string): Observable<any> {
+  getNextStarships(): Observable<any> {
     this.apiUrl=this.apiUrl+"?page=2"
     return this.http.get<Starship[]>(this.apiUrl);
   }
-
 }

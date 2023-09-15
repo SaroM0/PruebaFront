@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { StarshipModule } from './starship/starship.module';
 import { HttpClientModule } from '@angular/common/http';
+import { PeopleModule } from './people/people.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     StarshipModule,
-    HttpClientModule
+    HttpClientModule,
+    PeopleModule
   ],
   providers: [],
   bootstrap: [AppComponent]

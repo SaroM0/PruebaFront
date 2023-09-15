@@ -25,6 +25,18 @@ export class StarshipListComponent implements OnInit {
     });
   }
 
+  getNextStarships(): void {
+    this.starshipService.getNextStarships().subscribe((data: any) => {
+      // Se mapean los resultados a objetos tipo Starship
+      this.starships = data.results.map((result: any) => ({
+        name: result.name,
+        model: result.model,
+        
+        // Mapea otros campos según tu clase Starship
+      }));
+    });
+  }
+
   ngOnInit() {
     this.getStarships();
   }
