@@ -11,7 +11,15 @@ export class StarshipListComponent implements OnInit {
 
   starships: Array<Starship> = [];
 
+  selectedStarship!: Starship;
+  selected = false;
+
   constructor(private starshipService: StarshipService) { }
+
+  onSelected(starship: Starship): void {
+    this.selected = true;
+    this.selectedStarship = starship;
+  }
 
   getStarships(): void {
     this.starshipService.getStarships().subscribe((data: any) => {

@@ -3,7 +3,7 @@ export class Starship {
     name:string;
     model:string;
     manufacturer:string;
-    cost_in_credits:number;
+    cost_in_credits:string;
     lenght:number;
     max_atmosphering_speed:number;
     crew:string;
@@ -24,7 +24,7 @@ export class Starship {
         name:string,
         model:string,
         manufacturer:string,
-        cost_in_credits:number,
+        cost_in_credits:string,
         lenght:number,
         max_atmosphering_speed:number,
         crew:string,
